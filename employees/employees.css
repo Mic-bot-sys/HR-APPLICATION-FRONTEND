@@ -24,6 +24,35 @@
     background-color: #FFFF;
 }
 
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: red;
+}
+
+.terminate-icon{
+    display: none;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+#terminate{
+    font-size: 1rem;
+    color: red;
+    background-color: none;
+}
+
 .side-navigation .navigation-section{
     margin: 2rem 1rem;
     height: 70%;
@@ -31,6 +60,10 @@
 
 .navigation-logo{
     text-align: center;
+}
+
+.alt-search{
+    display: none;
 }
 
 .navigation-content{
@@ -135,6 +168,16 @@ select:focus{
     background-color: #990202;
 }
 
+.custom-search{
+    height: 15px;
+    width: 40px;
+    padding: 5px;
+    font-family: "Poppins";
+    font-size: 10px;
+    color: #ffff !important;
+    background-color: #990202;
+}
+
 .upload-button{
     display: flex;
     justify-content: space-between;
@@ -175,6 +218,10 @@ select:focus{
     width: 12%;
     padding: 0 1rem;
     background-color: #ffff;
+}
+
+.alt-search{
+    overflow: hidden;
 }
 
 .employees{
@@ -273,3 +320,306 @@ img {
 }
 
 /* END EMPLOYEES CSS */
+
+
+
+
+/* THE RESPONSIVENESS BEGINS */
+@media screen and (max-width: 600px){
+    .dashboard-section{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    
+    .alt-search{
+        display: inline;
+    }
+
+    .cards-section{
+        width: 100%;
+    }
+
+    .employee-card{
+        width: 250px;
+        height: 345px;
+        background-color: #ffff;
+        margin-bottom: 1rem;
+    }
+
+    .input-addons{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .terminate-icon{
+        display: flex
+    }
+
+    .side-navigation{
+        position: absolute;
+        left: -200px;
+
+    }
+
+    .staffs-header{
+        display: none;
+    }
+
+    .custom-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10px;
+        min-width: 140px;
+        padding: 12px;
+        color: #ffff !important;
+        background-color: #990202;
+    }
+
+    .upload-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 10px;
+        padding: 12px;
+        color: #990202 !important;
+        border: 1px solid #990202;
+        background-color: rgba(153, 2, 2, 0.05);
+    }
+
+    .search-section{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .terminate-icon{
+        display: flex
+    }
+
+    .employees{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 0;
+    }
+
+    .search-container{
+        display: none;
+    }
+
+    .filter-container{
+        display: none;
+    }
+
+    #search-input{
+        height: 58px;
+        width: 200px;
+        padding: 0px 16px 0px 16px; 
+        border:0px;
+        }
+
+        #alt-search-text{
+            height: 40px;
+            width: 90%;
+            padding: 0px 16px 0px 16px; 
+            border:0px;
+            margin-bottom: 5px;
+        }
+
+        #alt-search-text:focus{
+            outline: none;  
+        }
+
+
+    @keyframes moveToRight{
+        from{
+            left: -200px;
+            transform: translateX(-200px);
+        }
+        to{
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes moveToLeft{
+        from{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(-500px);
+        }
+    }
+
+
+    select{
+        padding: 10px; 
+        background-color:#ffff; 
+        border:none; 
+        border-radius: 7px;
+        font-family: "Inter";
+        font-size: 10px;
+    }
+
+    select:focus{
+        outline: none;
+    }
+
+
+    #dashboardHead{
+        font-size: 17px !important;
+        font-weight: 600;
+    }
+
+    #card-header{
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    #card-figure{
+        font-family: "Poppins";
+        font-size: 33px;
+        font-weight: 500 !important;
+        margin-bottom: 5px;
+    }
+
+    #info{
+        font-weight: 400;
+        font-size: 10px;
+        color: #990202;
+        margin-left: 10px;
+    }
+
+
+    #recent-text{
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    #file {
+        width: 100% !important;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    .side-navigation{
+        display: none;
+    }
+
+    .dashboard-section{
+        width: 100%;
+    }
+
+
+    .terminate-icon{
+        display: flex;
+    }
+
+    .progress-card{
+        width: 28%;
+    }
+
+    .activity-section .recent-activities-section{
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .activity-section .activity-chart-section{
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .chart-container{
+        width: 48%;
+    }
+
+    #info{
+        font-weight: 400;
+        font-size: 12px;
+        color: #990202;
+        margin-left: 10px;
+    }
+
+    #timestampId{
+        color: #a9a9a9;
+        font-size: 12px;
+    }
+
+    #recent-text{
+        margin-bottom: 1.8rem;
+    }
+
+
+    #dashboardHead{
+        font-size: 17px !important;
+        font-weight: 600;
+    }
+
+    #card-header{
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    #card-figure{
+        font-family: "Poppins";
+        font-size: 33px;
+        font-weight: 500 !important;
+        margin-bottom: 5px;
+    }
+
+    #file {
+        width: 100% !important;
+    }
+
+
+}
+
+@media screen and (max-width: 1300px) and (min-width: 601px){
+    .side-navigation{
+        display: block;
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 1rem;
+        color: #373737;
+    }
+
+    .search-container{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        width: 75%;    
+        padding: 0 1rem;
+        overflow: hidden;
+        background-color: #ffff;
+    }
+
+    #search-input{
+        height: 58px;
+        width: 100%;
+        padding: 0px 16px 0px 16px; 
+        border:0px;
+        }
+}
+/* END OF RESPONSIVENESS */

@@ -25,19 +25,6 @@
     background-color: #FFFF;
 }
 
-
-
-@keyframes moveToLeft{
-    from{
-        opacity: 1;
-        transform: translateX(0);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(-500px);
-    }
-}
-
 .hamburger{
     display: none;
     cursor: pointer;
@@ -95,7 +82,6 @@ a{
     font-weight: 700;
     margin-left: 1rem;
     color: #373737;
-
 }
 
 hr{
@@ -340,6 +326,18 @@ progress::-moz-progress-bar {
         }
     }
 
+    @keyframes moveToLeft{
+        from{
+            opacity: 1;
+            transform: translateX(0);
+        }
+        to{
+            opacity: 1;
+            transform: translateX(-500px);
+        }
+    }
+    
+
     .chart-container{
         width: 90%;
     }
@@ -348,6 +346,7 @@ progress::-moz-progress-bar {
     .progress-card{
         width: 100%;
     }
+    
 
     .activity-section .recent-activities-section{
         width: 100%;
@@ -438,7 +437,7 @@ progress::-moz-progress-bar {
 
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px){
+@media screen and (max-width: 900px) and (min-width: 601px){
     .side-navigation{
         display: none;
     }
@@ -537,5 +536,95 @@ progress::-moz-progress-bar {
         border-radius: 20px;
         background: #f0bbbb;
     }
+}
+
+@media screen and (max-width: 1367px) and (min-width: 901px){
+    .side-navigation{
+        display: block;
+    }    
+    
+    a{
+        text-decoration: none;
+        font-size: 11px;
+        font-weight: 500;
+        margin-left: 1rem;
+        color: #373737;
+    }
+
+    .progress-card{
+        width: 28%;
+    }
+
+    .activity-section .recent-activities-section{
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .activity-section .activity-chart-section{
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .chart-container{
+        width: 48%;
+    }
+
+    #info{
+        font-weight: 400;
+        font-size: 12px;
+        color: #990202;
+        margin-left: 10px;
+    }
+
+    #timestampId{
+        color: #a9a9a9;
+        font-size: 12px;
+    }
+
+    #recent-text{
+        margin-bottom: 1.8rem;
+    }
+
+
+    #card-header{
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    #card-figure{
+        font-family: "Poppins";
+        font-size: 33px;
+        font-weight: 500 !important;
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+
+    progress, progress::-webkit-progress-value {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #990202;
+    }
+    progress::-webkit-progress-bar {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #f0bbbb;
+    }
+    
+    progress::-moz-progress-bar {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #f0bbbb;
+    }
+
 }
 /* END OF RESPONSIVENESS */
