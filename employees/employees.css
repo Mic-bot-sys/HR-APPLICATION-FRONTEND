@@ -333,6 +333,7 @@ img {
         display: flex;
         justify-content: space-around;
         align-items: center;
+        width: 100%;
     }
     
     .alt-search{
@@ -344,10 +345,6 @@ img {
     }
 
 
-    .cards-section{
-        width: 100%;
-    }
-
     .employee-card{
         width: 250px;
         height: 345px;
@@ -358,6 +355,7 @@ img {
     .input-addons{
         display: flex;
         justify-content: space-between;
+        width: 100%;
     }
 
     .hamburger{
@@ -564,6 +562,17 @@ img {
         padding: 10px;
         color: #ffff !important;
         background-color: #990202;
+    }
+
+    .upload-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        padding: 10px;
+        color: #990202 !important;
+        border: 1px solid #990202;
+        background-color: rgba(153, 2, 2, 0.05);
     }
 
     #search-input{
