@@ -30,6 +30,10 @@
     margin-bottom: 1.5rem;
 }
 
+.alt-search{
+    display: none;
+}
+
 .bar{
     display: block;
     width: 25px;
