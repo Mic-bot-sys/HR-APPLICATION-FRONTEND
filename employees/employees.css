@@ -184,7 +184,7 @@ select:focus{
     align-items: center;
     height: 20px;
     width: 100px;
-    padding: 1rem;
+    padding: 10px;
     margin-right: 1rem;
     color: #990202 !important;
     border: 1px solid #990202;
@@ -516,7 +516,7 @@ img {
 
 }
 
-@media screen and (max-width: 900px) and (min-width: 600px){
+@media screen and (max-width: 900px) and (min-width: 601px){
     .side-navigation{
         display: none;
     }
@@ -525,29 +525,42 @@ img {
         width: 100%;
     }
 
+    .hamburger{
+        display: block;
+    }
+
 
     .terminate-icon{
         display: flex;
     }
 
-    .progress-card{
-        width: 28%;
+    .filter-container{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 0 1rem;
+        background-color: #ffff;
     }
 
-    .activity-section .recent-activities-section{
-        width: 100%;
-        padding: 2rem;
-        height: auto;
+    .search-container{
+        height: 40px;
+        width: 70%;    
     }
 
-    .activity-section .activity-chart-section{
-        width: 100%;
-        padding: 2rem;
-        height: auto;
+    .custom-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        min-width: 140px;
+        padding: 10px;
+        color: #ffff !important;
+        background-color: #990202;
     }
 
-    .chart-container{
-        width: 48%;
+    #search-input{
+        height: 40px;
+        width: 70%;    
     }
 
     #info{
@@ -592,7 +605,7 @@ img {
 
 }
 
-@media screen and (max-width: 1300px) and (min-width: 601px){
+@media screen and (max-width: 1300px) and (min-width: 901px){
     .side-navigation{
         display: block;
     }
