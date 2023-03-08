@@ -1,0 +1,541 @@
+  /* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap'); */
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+.base-body{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* THE NAVIGATION STYLES */
+.side-navigation{
+    height: 100vh;
+    width: 18%;
+    overflow: "hidden";
+    background-color: #FFFF;
+}
+
+
+
+@keyframes moveToLeft{
+    from{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(-500px);
+    }
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin:5px 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: red;
+}
+
+.terminate-icon{
+    display: none;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+#terminate{
+    font-size: 1rem;
+    color: red;
+    background-color: none;
+}
+
+.side-navigation .navigation-section{
+    margin: 2rem 1rem;
+    height: 70%;
+}
+
+.navigation-logo{
+    text-align: center;
+}
+
+.navigation-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #373737;
+
+}
+
+hr{
+    background: #c0bebe;
+
+}
+
+#logo{
+    margin-bottom: 1rem;
+}
+
+#dashboardId{
+    background-color: #990202 !important;
+}
+
+#dash-text{
+    color: white;
+}
+
+/* THE DASHBOARD STYLES */
+.dashboard-section{
+    height: 100vh;
+    width: 82%;
+    overflow: auto;
+    padding: 2rem;
+    padding-top: 4rem;
+    background-color: #F5F5F5;
+}
+
+.dashboard-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.progress-card{
+    width: 18rem;
+    background-color: white;
+    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+
+.activity-section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 26px;
+}
+
+.activity-section .recent-activities-section{
+    background: #ffff;
+    width: 45%;
+    padding: 2rem;
+    height: 25rem;
+    overflow: auto;
+    margin-bottom: 1rem;
+}
+
+.activity-list{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    font-size: 12px;
+    padding: 1rem 0;
+}
+
+.activity-item{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.7rem;
+}
+
+.activity-container{
+    padding: 1rem 0;    
+}
+
+.chart-container{
+    background: rgba(248, 192, 19, 0.06);
+    width: 220px;
+    height: 180px;
+    text-align: center;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item-info{
+    display: flex;
+    align-items: center;
+}
+
+.activity-section .activity-chart-section{
+    background: #ffff;
+    width: 45%;
+    padding: 2rem 1rem;
+    height: 25rem;
+    overflow: auto;
+}
+
+
+.charts-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
+}
+
+#dashboardHead{
+    font-size: 20px !important;
+    font-weight: 800;
+}
+
+#card-header{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-family: "Poppins";
+    color: #990202;
+}
+
+#card-text{
+    font-family: "Poppins" !important;
+}
+
+#card-figure{
+    font-family: "Poppins";
+    font-size: 33px;
+    font-weight: 600 !important;
+    margin-bottom: 20px;
+}
+
+#timestampId{
+    color: #a9a9a9;
+}
+
+#info{
+    font-weight: 500;
+    color: #990202;
+    margin-left: 10px;
+}
+
+#recent-text{
+    font-weight: 700;
+}
+
+#chart-text{
+    font-family: "Poppins";
+    font-size: 11.57px;
+    font-weight: 700;
+}
+
+select{
+    padding: 10px; 
+    background-color:#ffff; 
+    border:none; 
+    border-radius: 7px;
+    font-family: "Inter";
+}
+
+select:focus{
+    outline: none;
+}
+
+#file {
+    width: 100% !important;
+}
+
+/* 
+THE CUSTOMIZING ATTRIBUTES FOR THE PROGRESS BAR */
+progress, progress::-webkit-progress-value {
+    border: 0;
+    height: 7px;
+    border-radius: 20px;
+    background: #990202;
+}
+progress::-webkit-progress-bar {
+    border: 0;
+    height: 7px;
+    border-radius: 20px;
+    background: #f0bbbb;
+}
+
+progress::-moz-progress-bar {
+    border: 0;
+    height: 7px;
+    border-radius: 20px;
+    background: #f0bbbb;
+}
+/* THE CUSTOMIZING ATTRIBUTES FOR THE PROGRESS BAR */
+
+
+/* THE RESPONSIVENESS BEGINS */
+@media screen and (max-width: 600px){
+    .dashboard-section{
+        width: 100%;
+        position: relative;
+        z-index: 1;
+    }
+
+    .cards-section{
+        width: 100%;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .terminate-icon{
+        display: flex
+    }
+
+    /* .side-navigation{
+        display: none;
+    } */
+
+    .side-navigation{
+        position: absolute;
+        left: -200px;
+
+    }
+
+    @keyframes moveToRight{
+        from{
+            left: -200px;
+            transform: translateX(-200px);
+        }
+        to{
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+
+    .chart-container{
+        width: 90%;
+    }
+
+
+    .progress-card{
+        width: 100%;
+    }
+
+    .activity-section .recent-activities-section{
+        width: 100%;
+        padding: 1rem;
+        height: auto;
+    }
+
+    .activity-section .activity-chart-section{
+        width: 100%;
+        padding: 2rem 0px;
+        height: auto;
+    }
+
+    select{
+        padding: 10px; 
+        background-color:#ffff; 
+        border:none; 
+        border-radius: 7px;
+        font-family: "Inter";
+        font-size: 10px;
+    }
+
+    select:focus{
+        outline: none;
+    }
+
+
+    #dashboardHead{
+        font-size: 17px !important;
+        font-weight: 600;
+    }
+
+    #card-header{
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    #card-figure{
+        font-family: "Poppins";
+        font-size: 33px;
+        font-weight: 500 !important;
+        margin-bottom: 5px;
+    }
+
+    #info{
+        font-weight: 400;
+        font-size: 10px;
+        color: #990202;
+        margin-left: 10px;
+    }
+
+    #timestampId{
+        color: #a9a9a9;
+        font-size: 10px;
+    }
+
+    #recent-text{
+        font-weight: 600;
+        font-size: 0.9rem;
+    }
+
+    #file {
+        width: 100% !important;
+    }
+
+
+
+    progress, progress::-webkit-progress-value {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #990202;
+    }
+    progress::-webkit-progress-bar {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #f0bbbb;
+    }
+    
+    progress::-moz-progress-bar {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #f0bbbb;
+    }
+
+}
+
+@media screen and (max-width: 900px) and (min-width: 600px){
+    .side-navigation{
+        display: none;
+    }
+
+    .dashboard-section{
+        width: 100%;
+    }
+
+    .hamburger{
+        display: block;
+        width: 20%;
+    }
+
+    .terminate-icon{
+        display: flex;
+    }
+
+    .progress-card{
+        width: 28%;
+    }
+
+    .activity-section .recent-activities-section{
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .activity-section .activity-chart-section{
+        width: 100%;
+        padding: 2rem;
+        height: auto;
+    }
+
+    .chart-container{
+        width: 48%;
+    }
+
+    #info{
+        font-weight: 400;
+        font-size: 12px;
+        color: #990202;
+        margin-left: 10px;
+    }
+
+    #timestampId{
+        color: #a9a9a9;
+        font-size: 12px;
+    }
+
+    #recent-text{
+        margin-bottom: 1.8rem;
+    }
+
+
+    #dashboardHead{
+        font-size: 17px !important;
+        font-weight: 600;
+    }
+
+    #card-header{
+        font-size: 0.8rem;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    #card-figure{
+        font-family: "Poppins";
+        font-size: 33px;
+        font-weight: 500 !important;
+        margin-bottom: 5px;
+    }
+
+    #file {
+        width: 100% !important;
+    }
+
+
+
+    
+    progress, progress::-webkit-progress-value {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #990202;
+    }
+    progress::-webkit-progress-bar {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #f0bbbb;
+    }
+    
+    progress::-moz-progress-bar {
+        border: 0;
+        height: 3px;
+        border-radius: 20px;
+        background: #f0bbbb;
+    }
+}
+/* END OF RESPONSIVENESS */

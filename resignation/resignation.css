@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+/* Employees Css start from line 117 */
+
+/* BASE CSS */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter";
+}
+
+.base-body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* THE NAVIGATION STYLES */
+.side-navigation{
+    height: 100vh;
+    width: 18%;
+    overflow: "hidden";
+    background-color: #FFFF;
+}
+
+.side-navigation .navigation-section{
+    margin: 2rem 1rem;
+    height: 70%;
+}
+
+.navigation-logo{
+    text-align: center;
+}
+
+.navigation-content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.nav-item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 1rem;
+    color: #373737;
+
+}
+
+hr{
+    background: #c0bebe;
+
+}
+
+#logo{
+    margin-bottom: 1rem;
+}
+
+#dashboardId{
+    background-color: #990202 !important;
+    color: black !important;
+}
+
+#employeeId{
+    background-color: #990202 !important;
+}
+
+#leaveId{
+    background-color: #990202 !important;
+}
+
+#dash-text{
+    color: black;
+}
+
+#leave-text{
+    color: white;
+}
+
+
+/* THE DASHBOARD STYLES */
+.dashboard-section{
+    height: 100vh;
+    width: 82%;
+    overflow: auto;
+    padding: 2rem;
+    padding-top: 4rem;
+    background-color: #F5F5F5;
+}
+
+.dashboard-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cards-section{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+
+#dashboardHead{
+    font-size: 20px !important;
+    font-weight: 800;
+}
+
+select{
+    padding: 10px; 
+    background-color:#ffff; 
+    border:none; 
+    border-radius: 7px;
+    font-family: "Inter";
+}
+
+select:focus{
+    outline: none;
+}
+/* END BASE CSS */
+
+
+/* START EMPLOYEES CSS */
+.custom-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    min-width: 140px;
+    padding: 1rem;
+    color: #ffff !important;
+    background-color: #990202;
+}
+
+.active-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff !important;
+    font-size: 8.61px;
+    padding: 7px;
+    background-color: #990202;
+}
+
+.inactive-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffff !important;
+    font-size: 8.61px;
+    padding: 7px;
+    background-color: #c4c4c4;
+}
+
+.upload-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 100px;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: #990202 !important;
+    border: 1px solid #990202;
+    background-color: rgba(153, 2, 2, 0.05);
+}
+
+.download-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 20px;
+    width: 120px;
+    padding: 1rem;
+    margin-right: 1rem;
+    color: #990202 !important;
+    border: 1px solid #990202;
+    background-color: rgba(153, 2, 2, 0.05);
+}
+
+.input-addons{
+    display: flex;
+}
+
+.search-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.8rem;
+}
+
+.search-container{
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 80%;    
+    padding: 0 1rem;
+    background-color: #ffff;
+}
+
+.filter-container{
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 12%;
+    padding: 0 1rem;
+    background-color: #ffff;
+}
+
+.employees{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+    width: 100%;
+    padding: 0;
+}
+
+.employee-card{
+    width: 250px;
+    height: 345px;
+    background-color: #ffff;
+    margin-bottom: 1rem;
+}
+
+.employee-image{
+    width: 250px;
+    height: 245px;
+}
+
+.employee-profile{
+    text-align: center;
+}
+
+.leave-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.position-profile{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+
+#staff-text{
+    font-family: "Inter";
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+#hint{
+    font-size: 12px;
+    color: #4A4A4A;
+}
+
+#add-text{
+    font-size: 12px;
+}
+
+#add-icon{
+    font-size: 25px;
+    font-weight: 400;
+}
+
+#search-input{
+    height: 58px;
+    width: 951px;
+    padding: 0px 16px 0px 16px; 
+    border:0px;
+    }
+
+#search-input:focus{
+        outline: none;
+    }
+
+#employee-name{
+    color: #990202;
+    font-size: 15px;
+    margin-top: 1rem;
+}
+
+#leave-employee{
+    color: #990202;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#employee-position{
+    color: #c4c4c4;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 1rem;
+}
+
+#started-leave{
+    color: #c4c4c4;
+    font-size: 13px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#employee-department{
+    color: #727272;
+    font-size: 11px;
+}
+
+#leave-date{
+    color: #727272;
+    font-size: 11px;
+}
+
+#dashboardId{
+    color: #0000 !important;
+    background-color: #990202 !important;
+}
+
+#resignationId{
+    color: #0000 !important;
+    background-color: #990202 !important;
+}
+
+#resignation-text{
+    color: white !important;
+}
+
+
+#employ-text{
+    color: white;
+}
+
+/* END EMPLOYEES CSS */
