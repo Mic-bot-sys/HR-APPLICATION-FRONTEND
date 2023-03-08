@@ -184,7 +184,7 @@ select:focus{
     align-items: center;
     height: 20px;
     width: 100px;
-    padding: 10px;
+    padding: 1rem;
     margin-right: 1rem;
     color: #990202 !important;
     border: 1px solid #990202;
@@ -220,9 +220,6 @@ select:focus{
     background-color: #ffff;
 }
 
-.alt-search{
-    overflow: hidden;
-}
 
 .employees{
     display: flex;
@@ -332,10 +329,20 @@ img {
         z-index: 1;
     }
 
+    .cards-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
     
     .alt-search{
-        display: inline;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5px;
     }
+
 
     .cards-section{
         width: 100%;
@@ -422,6 +429,14 @@ img {
         display: none;
     }
 
+    #alt-search-text{
+        height: 40px;
+        width: 100%;
+        padding: 0px 16px 0px 16px; 
+        border:0px;
+        margin-bottom: 5px;
+    }
+
     #search-input{
         height: 58px;
         width: 200px;
@@ -429,14 +444,7 @@ img {
         border:0px;
         }
 
-        #alt-search-text{
-            height: 40px;
-            width: 90%;
-            padding: 0px 16px 0px 16px; 
-            border:0px;
-            margin-bottom: 5px;
-        }
-
+        
         #alt-search-text:focus{
             outline: none;  
         }
@@ -626,6 +634,56 @@ img {
         padding: 0 1rem;
         overflow: hidden;
         background-color: #ffff;
+    }
+
+    .filter-container{
+        display: flex;
+        align-items: center;
+        height: 40px;
+        padding: 0 1rem;
+        background-color: #ffff;
+    }
+    
+    .employee-card{
+        width: 210px;
+        height: 300px;
+        background-color: #ffff;
+        margin-bottom: 1rem;
+    }
+
+    .employee-image{
+        width: 210px;
+        height: 200px;
+    }
+
+    .upload-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        padding: 10px;
+        color: #990202 !important;
+        border: 1px solid #990202;
+        background-color: rgba(153, 2, 2, 0.05);
+    }
+
+    .custom-button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 20px;
+        min-width: 140px;
+        padding: 10px;
+        color: #ffff !important;
+        background-color: #990202;
+    }
+
+    .dropdown{
+        padding: 0; 
+        background-color:#ffff; 
+        border:none; 
+        border-radius: 7px;
+        font-family: "Inter";
     }
 
     #search-input{
