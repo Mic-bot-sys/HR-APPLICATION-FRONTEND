@@ -1,5 +1,7 @@
 @import "details.css";
 @import url("/employees/new-employee/styles/_bioData.css");
+@import url("/employees/new-employee/styles/_emergencyContact.css");
+@import url("/employees/new-employee/styles/_uploadPassport.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* Employees Css start from line 117 */
 
@@ -564,6 +566,11 @@ img {
         padding: 10px;
         color: #ffff !important;
         background-color: #990202;
+    }
+
+
+    .custom-button:focus{
+        opacity:0.5;
     }
 
     .upload-button{
