@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+
+.details-input{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.input-detail{
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+    width: 30%;
+    font-family: "Inter";
+    font-size: 12px;
+}
+
+.first-displayed{
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.28);    
+}
+
+.others{
+    color: black;
+}
+
+
+#input-new-employee{
+    height: 28px;
+    top: 21px;
+    padding: 10px;
+    width: 100%;    
+    border: none;
+}
+
+#input-new-employee:focus{
+    outline: none;
+}
+
+
+#input-select{
+    height: 50px;
+    top: 21px;
+    padding: 10px;
+    width: 100% !important;    
+    border-radius: none !important;
+    border: none;
+}
+
+#input-select:focus{
+    outline: none;
+}
+
+
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    font-family: "Poppins";
+    font-size: 12px;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.28);
+    opacity: 1; /* Firefox */
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.28);
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.28);
+  }

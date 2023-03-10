@@ -245,7 +245,7 @@ hr{
     font-weight: 700;
 }
 
-select{
+#myselect{
     padding: 10px; 
     background-color:#ffff; 
     border:none; 
@@ -253,7 +253,7 @@ select{
     font-family: "Inter";
 }
 
-select:focus{
+#my#my#myselectectectect:focus{
     outline: none;
 }
 
@@ -360,7 +360,7 @@ progress::-moz-progress-bar {
         height: auto;
     }
 
-    select{
+    #myselect{
         padding: 10px; 
         background-color:#ffff; 
         border:none; 
@@ -369,7 +369,7 @@ progress::-moz-progress-bar {
         font-size: 10px;
     }
 
-    select:focus{
+    #myselect:focus{
         outline: none;
     }
 
@@ -538,7 +538,7 @@ progress::-moz-progress-bar {
     }
 }
 
-@media screen and (max-width: 1367px) and (min-width: 901px){
+@media screen and (max-width: 1365px) and (min-width: 901px){
     .side-navigation{
         display: block;
     }    

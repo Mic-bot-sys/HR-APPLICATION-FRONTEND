@@ -1,3 +1,5 @@
+@import "details.css";
+@import url("/employees/new-employee/styles/_bioData.css");
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 /* Employees Css start from line 117 */
 
@@ -141,7 +143,7 @@ hr{
     font-weight: 800;
 }
 
-select{
+#myselect{
     padding: 10px; 
     background-color:#ffff; 
     border:none; 
@@ -149,7 +151,7 @@ select{
     font-family: "Inter";
 }
 
-select:focus{
+#myselect:focus{
     outline: none;
 }
 
@@ -471,7 +473,7 @@ img {
     }
 
 
-    select{
+    #myselect{
         padding: 10px; 
         background-color:#ffff; 
         border:none; 
@@ -480,7 +482,7 @@ img {
         font-size: 10px;
     }
 
-    select:focus{
+    #myselect:focus{
         outline: none;
     }
 
