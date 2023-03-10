@@ -104,7 +104,7 @@ hr{
     font-weight: 800;
 }
 
-select{
+#myselect{
     padding: 10px; 
     background-color:#ffff; 
     border:none; 

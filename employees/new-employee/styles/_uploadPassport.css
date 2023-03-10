@@ -1,0 +1,45 @@
+.input-upload{
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    background-color: white;
+    width: 100%;
+    height: 14rem;
+}
+
+.sub-upload{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.contain{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+
+
+#file-input{
+    display: none;
+}
+
+#file-label{
+    font-family: "Inter";
+    font-size: 12px;
+    font-weight: 500 !important;
+    border: 1px solid #990202;
+    padding: 10px;
+    width: 11rem;
+}
+
+#file-input-warning{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 12px;
+    color: #727272;
+    margin-top: 1rem;
+}
