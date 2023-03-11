@@ -2,8 +2,9 @@
 .bio-data-section{
     display: flex;
     justify-content: space-between;
-    height: 219.04px;
+    height: 290px;
     overflow: hidden;
+    width: 100%;
 }
 
 .information-section{
@@ -18,7 +19,7 @@
 .bio-data-header{
     font-size: 20px !important;
     font-weight: 600;
-    margin-left: 1rem;
+    margin-left: 10px;
     margin-bottom: 2rem;
 }
 
@@ -30,8 +31,8 @@
 }
 
 #profile-container{
-    width: 170px;
-    height: 219.04px;
+    width: 200px;
+    height: 290px;
     background-color: #ffff;
     margin-bottom: 1rem;
 }
@@ -42,8 +43,16 @@
 
 .bio-data-container{
     height: 219.04px;
-    width: 82%;
+    width: 100%;
     background-color: white;
+    overflow: hidden;
+}
+
+.promotion-container{
+    height: 290.04px;
+    width: 79%;
+    overflow: hidden;
+    background-color: #F5F5F5;
     overflow: hidden;
 }
 
@@ -79,7 +88,7 @@
 }
 
 .bio-detail{
-    margin-left: 1rem;
+    margin-left: 10px;
     width: 18%;
     height: 5rem;
     overflow: hidden;
@@ -90,6 +99,10 @@
     width: 18%;
     height: 5rem;
     overflow: hidden;
+}
+
+.info-texts{
+    margin-bottom: 2rem;
 }
 
 label{
@@ -112,7 +125,7 @@ label{
   #profile-name{
     color: #990202;
     font-size: 9.81px;
-    margin-top: 5px;
+    margin-top: 1rem;
 }
 
 #profile-position{
@@ -122,7 +135,23 @@ label{
     margin-bottom: 5px;
 }
 
+#promotion-position{
+    color: #727272;
+    font-size: 8.5px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
 #profile-department{
     color: #727272;
     font-size: 6.54px;
+}
+
+#promotion-department{
+    color: #727272;
+    font-size: 6.54px;
+}
+
+#promotion-date{
+    margin-top: 2px;
 }
