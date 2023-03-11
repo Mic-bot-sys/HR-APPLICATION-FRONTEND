@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="employees.css">
-    <title>Employees</title>
+    <link rel="stylesheet" href="promotion-details.css">
+    <link rel="stylesheet" href="promotion.css">
+    <title>Promotion</title>
 </head>
 <body>
     <div class="base-body">
@@ -119,7 +120,7 @@
             </div>
 
             <div class="dashboard-top">
-                <p id="dashboardHead">Employees</p>
+                <p id="dashboardHead">Promotion</p>
                 <div>
                     <select id="myselect">
                         <option value=""><b>Admin Username</b></option>
@@ -144,16 +145,34 @@
                                 <img src="../media/employees/a.png" alt=""  id="profile-image">
                             </div>
                             <div class="profile">  
-                                <p id="profile-name">Mr Andrew Oseni</p>
-                                <p id="profile-position">Manager (Position)</p>
-                                <p id="profile-department">Communication</p>                           
+                                <p id="profile-name">Mr Andrew Oseni</p>                   
                             </div>
+                            <div class="position-profile">
+                                <div class="initial-position">
+                                    <p id="promotion-position">Former Position</p>
+                                    <p id="promotion-department">Communication</p>       
+    
+                                </div>
+                                <div class="present-position">
+                                    <p id="promotion-position">Present Position</p>
+                                    <p id="promotion-department">Accouning</p>       
+                                </div>   
+                            </div> 
 
                         <div class="profile-detail">
 
                         </div>
                     </div>
                     
+                    
+                    <div class="promotion-container">
+                    <div class="info-header">
+                        <div class="info-texts">
+                            <label for="">Leave Ends</label>
+                            <p id="promotion-date">12th  August 2025</p>
+                        </div>
+                    </div>
+
                     <div class="bio-data-container">
                         <div class="sub-padding">
                             <div class="bio-data-header">
@@ -202,7 +221,12 @@
 
                         </div>
 
+                    
+                   
+                </div>
                     </div>
+
+                  
 
                 </div>
                 <!-- End Bio Data Section -->
